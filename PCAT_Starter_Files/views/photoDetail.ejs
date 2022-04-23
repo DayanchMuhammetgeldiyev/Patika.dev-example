@@ -1,0 +1,42 @@
+<%- include('./partials/_header') %>
+
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="row">
+          <div class="col-12 m-5">
+            <img src="<%= photo.image %>" alt="image">
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-10 mt-5">
+            <p>Title: <%= photo.title %></p>
+            <p>Description: <%= photo.description %></p>
+          </div>
+          <div class="col-2 mt-5">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="/edit/<%=photo.id %>" type="button" class="btn btn-secondary red">Edit</a>
+
+              <a href="/delete/<%=photo.id %>" type="button" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="btn btn-secondary">Delete</a>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+
+
+
+ 
+
+      </div>
+
+
+    </div>
+  </body>
+
+  <%- include('./partials/_footer') %>
