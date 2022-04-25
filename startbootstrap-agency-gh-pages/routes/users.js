@@ -3,16 +3,29 @@ const router = express.Router();
 const User = require('../models/User');
 
 router.get('/register', (req, res) => {
-    res.send('register');
+    res.send('/');
 });
 
 router.post('/register', (req, res) => {
     User.create(req.body, (error, user) => {
-        res.redirect('/');
+        res.redirect('/login');
     });
-
 });
 
+router.get('/login', (req, res) => {
+    res.send('/login');
+});
+
+router.post('/login', (req, res) => {
+   const { email, password } = req.body;
+    User.findOne({ email, password }, (error, user) => {
+        if (user) {
+            res.redirect('/');
+        } else {
+            res.redirect('/login');
+        }
+    });
+});
 
 
 module.exports = router;
