@@ -19,7 +19,6 @@ app.use(expressSession({
     saveUninitialized: true
     }));
 
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 require('./config/db');

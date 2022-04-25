@@ -20,11 +20,14 @@ router.post('/login', (req, res) => {
    const { email, password } = req.body;
     User.findOne({ email, password }, (error, user) => {
         if (user) {
+            if(user.password === password) {
             res.redirect('/');
         } else {
             res.redirect('/login');
         }
-    });
+    }
+}
+    );
 });
 
 
