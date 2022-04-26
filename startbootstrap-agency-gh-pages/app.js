@@ -1,6 +1,7 @@
 const express = require('express');
 const { engine } = require('express-handlebars');
 const user = require('./routes/users');
+const contact = require('./routes/contact');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const expressSession = require('express-session'); 
@@ -23,6 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 require('./config/db');
 app.use('/users', user);
+app.use('/contact', contact);
 
 app.use(express.static('public'));
 
@@ -45,6 +47,7 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login');
 });
+
 
 app.listen(4000, () => {
     console.log('Server is running on port 4000');
