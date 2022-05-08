@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font awesome & google -->
+    <link rel="stylesheet" src="./fontawesome-free-5.12.0-web/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <section class="menu">
+        <!-- title -->
+        <div class="title">
+            <h2>Asian Kitchen's Menu</h2>
+            <div class="underline"></div>
+        </div>
+        <!-- title - end -->
+        <!-- filer buttons -->
+        <div class="btn-container">
+            <button class="filter-btn" type="button" data-id="all">all</button>
+            <button class="filter-btn" type="button" data-id="Japan">Japan</button>
+            <button class="filter-btn" type="button" data-id="Korea">Korea</button>
+            <button class="filter-btn" type="button" data-id="China">China</button>
+        </div>
+        <!-- filer buttons -end -->
+        <!-- menu items -->
+        <div class="section-center">
+            <!-- single item -->
+            <article class="menu-item">
+                <img src="images/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg" class="photo"
+                    alt="menu-item">
+                <div class="item-info">
+                    <header>
+                        <h4>buttermilk pancakes</h4>
+                        <h4 class="price">$15</h4>
+                    </header>
+                    <p class="item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti
+                        similique
+                        tenetur quam
+                        consequuntur facilis unde voluptatum minima officiis officia.</p>
+                </div>
+            </article>
+            <!-- single item - end -->
+            <!-- menu items - end -->
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
