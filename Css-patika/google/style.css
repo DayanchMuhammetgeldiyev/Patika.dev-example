@@ -1,0 +1,51 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    border: 0;
+    width: 90%;
+    border-collapse: separate;
+}
+.box1 {
+    text-align: center;
+    background-color: #EEEE;
+    font-size: 17px;  
+    font-weight: 200;
+}
+.box2 {
+    width: 37%;
+    font-weight: 400;
+    text-align: center;
+    background-color: #7EE5da;
+    font-size: 15px;
+    /*border-collapse: separate;
+    white-space: normal;
+    block-size: 74px;
+    column-span: 3;*/
+}
+.box3 {
+    block-size: 74px;
+    width: 23%;
+    font-weight: 400;
+    background-color: #70CCC2;
+    border-collapse: separate;
+    text-align: center;
+    font-size: 13px;
+    
+}
+.box4 {
+    text-align: center;
+    font-weight: 400;
+    block-size: 74px;
+    width: 40%;
+    align-content: right;
+    background-color: #62B3AA;
+    border-collapse: separate;
+    font-size: 14px;
+
+}
+.copyright {
+   display: block;
+   font-size: 10;
+   text-align: center;
+}
