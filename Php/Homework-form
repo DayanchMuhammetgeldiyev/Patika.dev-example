@@ -1,0 +1,18 @@
+<?php
+if(isset($_POST['number'])){
+    if ($_POST['number'] % 3 == 0) {
+        echo "bu sayı 3 tam bölünür";
+    }
+else{ echo "bu sayı 3 bölünmez";}
+} else {
+    echo "sayı giriniz";
+}
+?>
+
+
+
+<form action="" method="post">
+<label for="number">Sayı girin</label>
+<input type="number" name="number" placeholder="Sayı girin...">
+<button type="submit">Gönder</button>
+</form>
